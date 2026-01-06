@@ -8,6 +8,7 @@ import ToDoList from './pages/ToDoList'
 import VantaBackground from './pages/VantaBackground'
 import RandomPassword from './pages/RandomPassword'
 import Notes from './pages/Notes'
+import AgeCalculator from './pages/AgeCalculator'
 
 function App() {
   const [page,setPage]=useState('Home');
@@ -20,6 +21,7 @@ function App() {
       {page=='ToDoList' && <ToDoList setPage={setPage} /> }
       {page=='RandomPassword' && <RandomPassword setPage={setPage} /> }
       {page=='NotesTaker' && <Notes setPage={setPage} /> }
+      {page=='AgeCalculator' && <AgeCalculator setPage={setPage} /> }
 
       
     </VantaBackground>
