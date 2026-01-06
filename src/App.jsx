@@ -7,6 +7,7 @@ import Weather from './pages/Weather'
 import ToDoList from './pages/ToDoList'
 import VantaBackground from './pages/VantaBackground'
 import RandomPassword from './pages/RandomPassword'
+import Notes from './pages/Notes'
 
 function App() {
   const [page,setPage]=useState('Home');
@@ -18,6 +19,8 @@ function App() {
       {page==='Weather' && <Weather setPage={setPage} />}
       {page=='ToDoList' && <ToDoList setPage={setPage} /> }
       {page=='RandomPassword' && <RandomPassword setPage={setPage} /> }
+      {page=='NotesTaker' && <Notes setPage={setPage} /> }
+
       
     </VantaBackground>
 

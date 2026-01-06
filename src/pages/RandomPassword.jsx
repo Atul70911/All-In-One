@@ -60,7 +60,7 @@ const RandomPassword = ({ setPage }) => {
           Generate Password
         </button>
 
-        <button className="rpSecondaryBtn" type="button" onClick={() => setPage("")}>
+        <button className="rpSecondaryBtn" type="button" onClick={() => setPage("NotesTaker")}>
           Next
         </button>
       </div>

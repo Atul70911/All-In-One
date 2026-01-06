@@ -1,0 +1,157 @@
+.notesApp {
+  max-width: 720px;
+  margin: 48px auto;
+  padding: 18px;
+  border-radius: 16px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+  background: rgba(17, 24, 39, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+
+  color: #e5e7eb;
+}
+
+.notesApp h1 {
+  margin: 0 0 14px;
+  color: #f9fafb;
+}
+
+/* Create Note button */
+.notesCreateBtn {
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.92);
+  color: #0b1220;
+
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+
+.notesCreateBtn:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.notesCreateBtn:active {
+  transform: translateY(0px);
+  opacity: 0.9;
+}
+
+/* One note container */
+.noteCard {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+/* Icon row */
+.noteActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.noteIconBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  cursor: pointer;
+
+  display: grid;
+  place-items: center;
+
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(249, 250, 251, 0.95);
+
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+
+.noteIconBtn:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.noteIconBtn:active {
+  transform: translateY(0px);
+}
+
+.noteIconBtn:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.65);
+  outline-offset: 3px;
+}
+
+/* Danger variant (Trash button) */
+.noteDanger {
+  background: rgba(239, 68, 68, 0.14);
+  border: 1px solid rgba(239, 68, 68, 0.28);
+  color: #fecaca;
+}
+
+.noteDanger:hover {
+  background: rgba(239, 68, 68, 0.18);
+  border-color: rgba(239, 68, 68, 0.40);
+}
+
+/* Textarea */
+.noteTextarea {
+  width: 100%;
+  min-height: 120px;
+  resize: vertical;
+
+  padding: 12px 12px;
+  border-radius: 12px;
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #f9fafb;
+
+  line-height: 1.4;
+}
+
+.noteTextarea::placeholder {
+  color: rgba(229, 231, 235, 0.65);
+}
+
+.noteTextarea:focus {
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* Next button at bottom (targets your last button in Notes) */
+.notesApp > button:last-child {
+  margin-top: 16px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(249, 250, 251, 0.95);
+
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+
+.notesApp > button:last-child:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.notesApp > button:last-child:active {
+  transform: translateY(0px);
+}
