@@ -1,0 +1,13 @@
+.vantaRoot {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* keep background behind everything */
+}
+
+.vantaContent {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
