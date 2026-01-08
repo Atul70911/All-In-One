@@ -1,0 +1,67 @@
+.qgApp {
+  max-width: 760px;
+  margin: 48px auto;
+  padding: 18px;
+  border-radius: 16px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+  background: rgba(17, 24, 39, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+
+  color: #e5e7eb;
+}
+
+.qgTitle {
+  margin: 0 0 14px;
+  color: #f9fafb;
+}
+
+.qgCard {
+  padding: 18px;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.qgQuote {
+  margin: 0 0 12px;
+  font-size: 22px;
+  line-height: 1.4;
+  color: rgba(249, 250, 251, 0.95);
+}
+
+.qgAuthor {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(229, 231, 235, 0.75);
+}
+
+.qgNextBtn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(249, 250, 251, 0.95);
+
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+
+.qgNextBtn:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.qgNextBtn:active {
+  transform: translateY(0px);
+}
