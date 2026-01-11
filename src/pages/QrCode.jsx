@@ -52,7 +52,7 @@ const QrCode = ({ setPage }) => {
         )}
       </div>
 
-      <button className="qrBtnSecondary" onClick={() => setPage("StopWatch")}>
+      <button className="qrBtnSecondary" onClick={() => setPage("ImageSearchEngine")}>
         Next
       </button>
     </div>

@@ -34,7 +34,7 @@ const ImageSearchEngine = ({setPage}) => {
     <div className="imgApp">
       <div className="imgTop">
         <h1 className="imgTitle">Image Search Engine</h1>
-        <button className="imgNextBtn" onClick={() => setPage("DragDrop")}>Next</button>
+        <button className="imgNextBtn" onClick={() => setPage("End")}>Next</button>
       </div>
 
       <form className="imgForm" onSubmit={(e) => e.preventDefault()}>
