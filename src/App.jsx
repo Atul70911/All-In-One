@@ -12,9 +12,11 @@ import AgeCalculator from "./pages/AgeCalculator";
 import QuoteGenerator from "./pages/QuoteGenerator";
 import QrCode from "./pages/QrCode";
 import StopWatch from "./pages/StopWatch";
+import DragDrop from "./pages/DragDrop";
+import ImageSearchEngine from "./pages/ImageSearchEngine";
 
 function App() {
-  const [page, setPage] = useState("QrCode");
+  const [page, setPage] = useState("DragDrop");
 
   return (
     <VantaBackground>
@@ -27,6 +29,9 @@ function App() {
       {page == "QuoteGenerator" && <QuoteGenerator setPage={setPage} />}
       {page == "QrCode" && <QrCode setPage={setPage} />}
       {page == "StopWatch" && <StopWatch setPage={setPage} />}
+      {page == "ImageSearchEngine" && <ImageSearchEngine setPage={setPage} />}
+      {page == "DragDrop" && <DragDrop setPage={setPage} />}
+
     </VantaBackground>
   );
 }
